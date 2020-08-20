@@ -59,7 +59,7 @@ p {
 .video-wrapper {
     display: none;
     width: 960px;
-    height: 650px;
+    height: 600px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
