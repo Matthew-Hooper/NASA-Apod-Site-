@@ -5,3 +5,4 @@ Basically, exactly as it says. This project uses NASA's Astronomy Picture of the
 It takes the data from the API and puts them into tags. 
 
 I even have it set to change which tag to use based on the media type. 
+For some reason though it keeps thinking the current date is one day ahead of the actual date. If it's actually the 20th, it thinks it's the 21st. 
