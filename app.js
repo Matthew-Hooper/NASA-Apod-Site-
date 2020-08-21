@@ -23,7 +23,7 @@ function getApod() {
         img.alt = data.title,
         desc.innerText = data.explanation,
         video.src = data.url  
-        if (data.media_type == "image") {
+        if (data.media_type === "image") {
             // Open hd image and add open classes
             img.addEventListener('click', () => {
                 modal.classList.add("open");
@@ -52,8 +52,5 @@ function getApod() {
         console.error('Error:', error);
     })
 }
-
-
-
 
 getApod();
