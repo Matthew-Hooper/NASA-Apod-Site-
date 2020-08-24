@@ -5,7 +5,9 @@
 }
 
 body {
-    background-color: #1d1d1d;
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(/dark-honeycomb.png);
+    background-repeat: repeat;
 }
 
 .heading, p, .caption {
@@ -13,9 +15,9 @@ body {
 }
 
 .heading {
-    font-size: 36px;
+    font-size: 2rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -28,8 +30,9 @@ p {
 }
 
 .caption {
-    position: absolute;
+    position: relative;
     text-align: center;
+    font-size: x-small;
     bottom: 15%;
     left: 50%;
     transform: translate(-50%);
@@ -38,11 +41,11 @@ p {
 .img-wrapper {
     text-align: center;
     overflow: hidden;
-    width: 960px;
-    height: 650px;
+    width: 50%;
+    height: 50%;
     left: 50%;
     transform: translate(-50%);
-    position: absolute;
+    position: relative;
 }
 
 .img-wrapper img {
@@ -58,9 +61,10 @@ p {
 
 .video-wrapper {
     display: none;
-    width: 960px;
-    height: 600px;
-    position: absolute;
+    text-align: center;
+    width: 50%;
+    height: 300px;
+    position: relative;
     left: 50%;
     transform: translate(-50%);
 }
@@ -71,9 +75,11 @@ p {
 }
 
 .description {
+    text-align: center;
+    font-size: 0.9rem;
     margin-top: 1rem;
-    width: 60%;
-    position: absolute;
+    width: 70%;
+    position: relative;
     bottom: 2%;
     left: 50%;
     transform: translate(-50%);

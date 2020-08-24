@@ -16,7 +16,7 @@ function getApod() {
     const api_key = 'UAkwv6lx8anyfS9Ncbb69ShdhD8dFIRtJIrsiO0K';
     
     // Fetch and update dynamically
-    fetch(`${api_base}?api_key=${api_key}`)
+    fetch(`${api_base}?date=2020-08-22&api_key=${api_key}`)
     .then(response => response.json())
     .then(data => {
         img.src = data.url,
