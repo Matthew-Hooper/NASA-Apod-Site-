@@ -16,7 +16,7 @@ function getApod() {
     const api_key = 'UAkwv6lx8anyfS9Ncbb69ShdhD8dFIRtJIrsiO0K';
     
     // Fetch and update dynamically
-    fetch(`${api_base}?date=2020-08-22&api_key=${api_key}`)
+    fetch(`${api_base}?api_key=${api_key}`)
     .then(response => response.json())
     .then(data => {
         img.src = data.url,
@@ -28,10 +28,11 @@ function getApod() {
             img.addEventListener('click', () => {
                 modal.classList.add("open");
                 hd.classList.add("open");
+                desc.classList.add("open");
+                caption.classList.add("open");
                 hd.src = data.hdurl;
                 hd.alt = data.title;
                 imgText.textContent = hd.alt;
-                desc.classList.add("open");
             });
             
             // Close hd image and remove classes
@@ -40,6 +41,7 @@ function getApod() {
                     modal.classList.remove("open");
                     hd.classList.remove("open");
                     desc.classList.remove("open");
+                    caption.classList.remove("open");
                 }
             });
         } else {
