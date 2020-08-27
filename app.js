@@ -22,7 +22,8 @@ function getApod() {
         img.src = data.url,
         img.alt = data.title,
         desc.innerText = data.explanation,
-        video.src = data.url  
+        video.src = data.url,
+        caption.innerText = `Copyright: ${data.copyright}`  
         if (data.media_type === "image") {
             // Open hd image and add open classes
             img.addEventListener('click', () => {
